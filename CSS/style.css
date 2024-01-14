@@ -1,5 +1,14 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');*/
 
+:root{
+    --background-color: #552e94;
+    --clock-background-color:#8165cf;
+    --text-color:#f6f5f8;
+}
+
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -8,11 +17,11 @@
 }
 
 body{
-    background-color: #552e94;
+    background-color: var(--background-color);
 }
 
 .clock{
-    background-color: #8165cf;
+    background-color: var(--clock-background-color);
     padding: 20px;
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(34, 37, 216, 0.2);
@@ -21,10 +30,10 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     opacity: 0.9;
-    
+    color: var(--text-color);
 }
 
 .time{
-    color: #f6f5f8;
+    color: var(--text-color);
     font-size: 8em;
 } 
